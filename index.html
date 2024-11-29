@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/digital-7-mono"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sales Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-info">
+        <form action="">
+          <h1>Full product info:</h1>
+          <input id="name" type="text" placeholder="Product Name" />
+
+          <div class="row">
+            <input id="cost-price" type="number" placeholder="Cost price" />
+            <input id="purchased-qty" type="number" placeholder="Purchased quantity" />
+          </div>
+
+          <div class="row">
+            <input id="selling-price" type="number" placeholder="Selling price" />
+            <input id="selling-qty" type="number" placeholder="Selling quantity" />
+          </div>
+
+          <button id="add-btn" class="submit-btn">Add to list</button>
+        </form>
+
+        <div class="total">
+          <h1>Total profit:</h1>
+          <span class="total-price"></span>
+        </div>
+      </div>
+
+      <div class="product-cards">
+        <h1>Product cards:</h1>
+        <div class="cards-wrapper"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
