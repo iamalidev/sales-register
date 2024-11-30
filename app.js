@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sellingPrice = parseInt(sellingPriceInput.value);
     const sellingQty = parseInt(sellingQtyInput.value);
 
-    if (!name || !costPrice || !purchasedQty || !sellingPrice || !sellingQty) {
+    if (!name || !costPrice || !purchasedQty || !sellingPrice || !sellingQty || purchasedQty < sellingQty) {
       return alert("Please fill all fields correctly!");
     }
 

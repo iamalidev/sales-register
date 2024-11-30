@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Digital-7";
+  src: url("digital-7.woff2");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -54,7 +59,7 @@ h1 {
 
 .total-price {
   font-size: 80px;
-  font-family: "Digital-7 Mono", sans-serif;
+  font-family: "Digital-7";
 }
 
 .product-cards {
