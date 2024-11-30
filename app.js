@@ -55,8 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sellingQty = parseInt(sellingQtyInput.value);
 
     if (!name || !costPrice || !purchasedQty || !sellingPrice || !sellingQty) {
-      alert("Please fill all fields correctly!");
-      return;
+      return alert("Please fill all fields correctly!");
     }
 
     const profit = (sellingPrice - costPrice) * sellingQty;
@@ -78,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const index = e.target.closest(".delete-btn").dataset.index;
       const profit = (products[index].sellingPrice - products[index].costPrice) * products[index].sellingQty;
       totalProfit -= profit;
-
       products.splice(index, 1);
       updateLocalStorage();
       renderProducts();
